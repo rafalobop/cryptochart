@@ -17,8 +17,8 @@ const Signup = () => {
     try {
       await signUp(email, password)
       navigate('/signin')
-    } catch (err) {
-      setError(err.message)
+    } catch (er) {
+      setError(er.message)
     }
   }
 
